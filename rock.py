@@ -1,4 +1,3 @@
-
 """This program plays a game of Rock, Paper, Scissors between two Players,
 and reports both Player's scores each round."""
 
@@ -117,7 +116,7 @@ class Game:
             games = int(games)
         except ValueError:
             games = random.randint(3, 12)
-            print(f"Unknown or incorrect imput, you will play {games} rounds")
+            print(f"Unknown or incorrect input, you will play {games} rounds")
         if games < 3:
             games = 3
             print("Your choice was too low, you will play 3 rounds")
