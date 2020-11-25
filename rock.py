@@ -15,6 +15,7 @@ class Player:
         self.my_move = random.choice(moves)
 
     def move(self):
+        print("Opponent will play: ROCK")
         return 'rock'
 
     def learn(self, my_move, their_move):
@@ -130,5 +131,5 @@ class Game:
 
 
 if __name__ == '__main__':
-    game = Game(humanPlayer(), randomPlayer())
+    game = Game(randomPlayer(), randomPlayer())
     game.play_game()
